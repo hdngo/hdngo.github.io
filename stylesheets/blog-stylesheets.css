@@ -202,7 +202,7 @@ a{
 .blog{
 	display:inline-block;
 	border:1px solid navy;
-	border-radius:10px;
+	border-radius:17px;
 	margin-left:3.5em;
 }
 
@@ -215,4 +215,12 @@ a{
 	text-align:center;
 	line-height: 0;
 	color:navy;
+}
+
+#zeros{
+	color: navy;
+}
+
+#zeros:hover{
+	color:rgb(161,228,219);
 }
