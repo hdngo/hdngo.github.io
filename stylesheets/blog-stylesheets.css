@@ -1,0 +1,218 @@
+*{
+	font-family:"Questrial", sans-serif;
+}
+
+p{
+	line-height: 1.5;
+}
+
+body{
+	background-image: url(../imgs/sneaker_mesh_fabric.png);
+	background-repeat: repeat;
+	margin:0;
+	height: 100%;
+  width: 100%;
+}
+
+#headline{
+	height: 35%;
+  width: 100%;
+  display: inline-block;
+  background-image: url(../imgs/zero_metal.png);
+  background-repeat: repeat;
+}
+
+#bloglink{
+	color: white;
+  text-align: center;
+  float: right;
+  margin-right: 7.5%;
+  font-family: "Roboto", Helvetica;
+  padding: 0;
+  font-size: 32px;
+  margin-bottom: 0;
+}
+
+#foreground{
+border: #D9E0DD 2px solid;
+  height: 80%;
+  width: 74%;
+  margin: auto;
+  margin-top: 6%;
+  margin-bottom: 6%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  background-color: white;
+  opacity: .9;
+}
+
+div #profile-photo {
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+}
+
+#profile-photo img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+#descriptors{
+	text-align:center;
+	width:80%;
+	margin:auto;
+	margin-top:2%;
+	margin-bottom:2%;
+}
+
+#blog-title{
+	font-size:42px;
+}
+
+#date{
+	color:rgb(161,228,219);
+}
+
+h1, h2, h3, h4, h5, h6{
+	color:#171C59;
+}
+
+hr{
+	width: 80%;
+  height: .5px;
+  background-color: lightgray;
+}
+
+#post{
+	width: 80%;
+  margin: auto;
+  margin-top: 5%%;
+  margin-bottom: 7.5%;
+}
+
+
+#post p{
+	font-weight:bolder;
+	color:black;
+}
+
+a{
+	text-decoration: none;
+}
+
+#links{
+	float: right;
+  clear: right;
+  margin-right: 8.25%;
+}
+
+.icon{
+	display:inline-block;
+	list-style: none;
+	padding:0;
+	height:32px;
+	text-align:center;
+	padding-left:15px;
+}
+
+.left-icons, .right-icons{
+	vertical-align: middle;
+	display:inline;
+}
+
+
+
+.icon a img{
+	height:100%;
+	padding:0;
+	margin:0;
+}
+
+
+.links{
+	padding-left:0;
+	padding-right:0;
+	text-align:center;
+}
+
+.links li{
+	display:inline-block;
+	margin-left:5px;
+	margin-right:5px;
+	list-style: none;
+}
+
+.links li a{
+	text-decoration: none;
+	color:white;
+	position:relative;
+	top:-2px;
+}
+
+.links li a:hover{
+	color: rgb(161,228,219);
+}
+
+.links li img{
+	height:.75em;
+}
+
+
+.footer{
+	display: block;
+  height: 5%;
+  width: 100%;
+  bottom: 0;
+}
+
+#copyright{
+	text-align: center;
+  color:#171C59;
+  padding: 0;
+  margin: 0;
+}
+
+.row{
+	width:100%;
+	display:block;
+	margin-top:3%;
+	margin-bottom:3%;
+}
+
+.photo img {
+  height: 90px;
+  width: 180px;
+  margin: auto;
+  display: block;
+}
+
+.photo {
+  display: block;
+  height: 90px;
+  width: 180px;
+  margin-top:15px;
+  border-bottom:1px solid lightgray;
+  border-top:1px solid lightgray;
+}
+
+.blog{
+	display:inline-block;
+	border:1px solid navy;
+	border-radius:10px;
+	margin-left:3.5em;
+}
+
+.blog:hover{
+	background-color:mintcream;
+	opacity:.5
+}
+
+.caption{
+	text-align:center;
+	line-height: 0;
+	color:navy;
+}
