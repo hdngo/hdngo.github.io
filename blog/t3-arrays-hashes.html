@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-  <title>Title Here.</title>
+  <title>Hashes &amp; Arrays</title>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheets.css">
   <link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
@@ -22,23 +22,25 @@
 
   <div id="foreground">
     <section id="descriptors">
-      <h1 id="blog-title">Blog Title</h1>
-      <h4 id="date">Date</h4>
+      <h1 id="blog-title">Hashes &amp; Arrays</h1>
+      <h4 id="date">April 25, 2015</h4>
     </section>
 
     <hr>
 
     <section id="post">
     <p>
-        Paragraph.
+        Sorry, no witty title this time. But hey, you still came to read my blog because you like me and my writing, right?
     </p>
     <p>
-        Another paragraph.
+        Tech topic #3: Arrays and Hashes, Hashes and Arrays. What's the difference? In my opinion, hashes are like arrays on steroids but not really. Going with my gut feeling, I'd have to tell you that hashes are simply arrays that are a bit more detail oriented. Imagine going to the grocery store where you're trying to find a certain something yeah? Well, going with my analogy so far, a store laid out like an array would have signs saying Isle 0, Isle 1, etc. etc. And yeah, I said "Isle 0" because you gotta know that with arrays, the first slot counts as slot 0. So hashes? Hash stores will have signs saying something like Isle 0: Toiletries. With that, you at least have a slight hint as to what's in Isle 0 before actually searching through it, so hey, you may have just saved yourself from a minute of walking through it for nothing.
     </p>
     <p>
-        ...and so on.
+        Anyways, at the bare minimum, you should know that both hashes and arrays can store objects. Each object essentially takes a slot or a space, like a row on a shelf, and that object can be another array or hash in itself, but let's not get lost with some inception kind of thinking for now. With arrays, you'll basically reference each object stored in it by saying, go to the first row, second row, etc. and see what's there. Thing is, with arrays, you can only reference the objects by referring their slot (aka index) number. With hashes, you'd reference objects by what we like to call "key: value" pairs. The keys are basically the same as slot numbers, except keys aren't limited to being just numbers. Instead of saying "Slot 0, Slot 1, etc.", we can instead say "Go to the Vegetable Section or Meat Section," to see what's there (aka the value). Keys can be strings based on that example, so if you say assign the value <span style: color="red">red</span> to the key <strong>color</strong>, you can reference that value using <strong>hashname[:strong]</strong>, where hashname is the name of your hash obviously. 
     </p> 
-  
+    <p>
+        In terms of when to use which, I think that comes down to a matter of preference really. But I would say that when you're dealing with say, properties of something, or care about detail, use hashes. Otherwise, if you're just trying to store a bunch of information, then go ahead and use arrays. The easiest example I can think of for hashes is storing someone's measurements, with keys such as height, weight, waist, etc. If you want to store the cost of each item on your receipt, then use an array, but if you want to use actually keep a list of how much you spent on each item on your receipt, then use a hash where you'd use the item as a key and the price as a value. I think that I'm slightly becoming biased towards hashes now...
+    </p>  
     </section>
       <!-- copy and paste as many sections as you want to add paragraphs -->
   </div>
