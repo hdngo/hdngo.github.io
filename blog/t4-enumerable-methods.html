@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+  <title>Lost?</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheets.css">
+  <link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<div id="headline">
+  <a href="https://hdngo.github.io/blog/index.html"><p id="bloglink">They really aren't though.</p></a>
+  <ul id="links">
+    <li class="icon"><a href="https://hdngo.github.io"><img src="../imgs/home-icon.png" alt="home"/></a></li>
+    <li class="icon"><a href="https://plus.google.com/u/1/117862724108147462712/about"><img src="../imgs/white-gplus.png" alt="+Harvey"/></a></li>
+    <li class="icon"><a href="https://www.linkedin.com/pub/harvey-ngo/64/792/a5b"><img id="linkedin" src="../imgs/linkedin.png" alt="linkedin"/></a></li>
+    <li class="icon"><a href="https://github.com/hdngo"><img class="git" src="../imgs/gitkit.png" alt="git@me"/></a></li>
+    <li class="icon"><a href="#"><img src="../imgs/tumblr.png" alt="gintsugi.tumblr.com"/></a></li>
+    <li class="icon"><a href="https://facebook.com/hdngo"><img src="../imgs/fb.png" alt="facebook"/></a></li>
+    <li class="icon"><a href="https://twitter.com/harveydngo"><img src="../imgs/twitter.png" alt="tweetster"/></a></li>
+  </ul>
+</div>
+
+  <div id="foreground">
+    <section id="descriptors">
+      <h1 id="blog-title">How to use .maps</h1>
+      <h4 id="date">May 3, 2015</h4>
+    </section>
+
+    <hr>
+
+    <section id="post">
+    <p>
+        Before we start, I gotta admit: 1) the method is actually <strong>map</strong> and not maps, and 2) I don't know why its called map instead of something else like transform or change. I guess you could say that with the Enumerable#map method, you're essentially "mapping out directions." End of bad joke.
+    </p>
+    <p>
+        But really, let's actually try to stretch out this map analogy a little bit shall we? When you're Googling for directions to some place, you're basically asking, "What steps do I take to get from A to B?" With the Enumerable#map method, you're basically acting as Google Maps here by providing your program with steps to get from A (you're receiver object) to B (your output). I think I'm trying too hard with this map analogy, so I'm gonna stop.
+    <p>
+        Anyways, take a look at this example below:
+    </p> 
+    <img style="text-align:center" src="./imgs/map-snippet.png" alt="map example"/>
+    <p>
+      In the example, the code is essentially saying, "do this to the current element." So by having "i*i" in the block, we're saying, multiply the current element by itself. The good thing about map, is that we actually end up returning a new array (yeeee for non-destructive!). The map method also allows you to "replace" the elements of a string in a sense, too, in that you could have done something like replace "i*i" with "no longer an integer," which would have returned an array with strings equal to "no longer an integer." 
+      </p>
+      <p>
+      It gets kind of tricky, but don't over think it, just know that if you think out of the box a bit, you can actually make great use out of the map method. In the words of Albert Einstein:
+    </p>
+
+      <p>
+      <em>Logic will get you from A to B. Imaginationg will take you everywhere.</em>
+      </p>
+      <p>Well, with coding, you kind of need both, but hopefully you get the point.
+      </p>
+  
+    </section>
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </div>
+  <div class="footer">
+      <p id="copyright">&copy; 2015 Harvey Ngo
+      </div>
+</body>
+</html>
