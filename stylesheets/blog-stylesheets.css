@@ -216,6 +216,15 @@ a{
 	opacity:.5
 }
 
+.center-text{
+	text-align:center;
+}
+
+.center-image{
+	margin-left:auto;
+	margin-right:auto;
+}
+
 .caption{
 	text-align:center;
 	line-height: 0;
