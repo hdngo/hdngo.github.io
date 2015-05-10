@@ -41,14 +41,14 @@
     <p>
       So let's make a paragraph class in Ruby real quick.
     </p>
-      <img class="center-image" "code-snippet" src="imgs/class1.png" alt="example 1">
+      <img class="center-image, code-snippet" src="imgs/class1.png" alt="example 1">
     <p>
       Notice how we have an initialize method in our class containing instance variables (the ones with the @ signs in front of them). Initialize methods essentially tell your program to "provide default values" to any new paragraph object that is created. So drawing the parallel to HTML &amp; CSS, it's basically the same as assigning all paragraphs elements with the class "Paragraph" with the properties "font: "Helvetica" and so on. The other method, change_color, is a method we provide to only our Paragraph class here, which will allow us to change the our color value to whatever color we pass in as our argument. 
     </p>
     <p>
     So how is Ruby intuitive in this case? Well, take a look at the example below first.
     </p>
-    <img class="center-image" "code-snippet" src="imgs/class2.png" alt="example 2">
+    <img class="center-image, code-snippet" src="imgs/class2.png" alt="example 2">
     <p>
     Ruby has a built-in way of letting you set permissions so to speak, on "attributes." I may have to correct myself later on this, but essentially, think of "setting an instance variable as an attribute" as well, an attribute. If you look at the example, you'll see attr_reader, attr_writer, and attr_accessor. The first basically allows you to read or see what value's stored in the attributes you set to be readable, so color .. font (our instance variables) in our example.  The second allows us to actually write over, or change our attribute values. Lastly, accessor is just a way of setting an attribute as readable and writable.
     </p>
