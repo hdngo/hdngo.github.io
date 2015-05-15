@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+  <title>Class Methods or Nah?</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheets.css">
+  <link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<div id="headline">
+  <a href="https://hdngo.github.io/blog/index.html"><p id="bloglink">They really aren't though.</p></a>
+  <ul id="links">
+    <li class="icon"><a href="https://hdngo.github.io"><img src="../imgs/home-icon.png" alt="home"/></a></li>
+    <li class="icon"><a href="https://plus.google.com/u/1/117862724108147462712/about"><img src="../imgs/white-gplus.png" alt="+Harvey"/></a></li>
+    <li class="icon"><a href="https://www.linkedin.com/pub/harvey-ngo/64/792/a5b"><img id="linkedin" src="../imgs/linkedin.png" alt="linkedin"/></a></li>
+    <li class="icon"><a href="https://github.com/hdngo"><img class="git" src="../imgs/gitkit.png" alt="git@me"/></a></li>
+    <li class="icon"><a href="#"><img src="../imgs/tumblr.png" alt="gintsugi.tumblr.com"/></a></li>
+    <li class="icon"><a href="https://facebook.com/hdngo"><img src="../imgs/fb.png" alt="facebook"/></a></li>
+    <li class="icon"><a href="https://twitter.com/harveydngo"><img src="../imgs/twitter.png" alt="tweetster"/></a></li>
+  </ul>
+</div>
+
+  <div id="foreground">
+    <section id="descriptors">
+      <h1 id="blog-title">Class Methods or Nah?</h1>
+      <h4 id="date">May 14, 2015/h4>
+    </section>
+
+    <hr>
+
+    <section id="post">
+    <p>
+        For this blog, I'm gonna be piggybacking off of the Ticket example from Chapter 3 of The Well Grounded Rubyist, because well, of all the resources I've gone through it provided the best example in my opinion. One quick thing to keep in mind: "objects are instances of classes."
+    </p>
+
+    <img class="center-image code-snippet" src="imgs/class_methods1.png" alt="defining class methods"/>
+    <p>
+       Let's say we have a class, Credit_Cards. If we wanted to, we could create a new Credit_Cards object to create say, a Visa credit card. Any method defined within our Credit_Cards class using the convention 'def methodname' is an instance method, meaning we can pass it as a message to our new Visa card object since it's an instance of the class Credit_Cards. In short, a Class instance method works for an instance of a Class. An example of how to create a class method and how to call it can be seen in the figure below. Note that there are other ways for creating and calling class methods though.
+    </p>
+    <p>
+      Class methods on the otherhand are inaccessible by class instances though (supposedly you can if you explicitly reference them, but let's not worry about that for now). Class methods work by being passed as messages to the actual Class in which they're defined (remember, classes are objects, too), rather than to an instance of the class. The question of when to use a class method may be a tricky one to answer, but one "simple" answer may arise after answering the question, "Is this operation that a single instance should be able to do?"  
+    </p> 
+    <p>
+      The last question may not make much sense, so let's consider the Class.new method. Class.new is a class method because well, it wouldn't make sense to have it as an instance method. If it were, then an instance of a class would basically be able to instantiate another instance of the same class and so forth. So in terms of our credit card example, a credit card would be able to "create" another credit card. That might be cool, but it wouldn't be if you ended up racking more debt. Not desirable. And just imagine if instead of credit cards, we were using a Dollar_Bills class. Each dollar would be able to generate another dollar... Well that may not be so bad, but it's probably illegal. Anyways, the point is, there's things that instances should be able to do and shouldn't be able to do. 
+    </p>
+    <p>
+      Something that our Visa credit card most likely wouldn't be able to do is tell you which of your credit cards have the highest credit limit. Why? Because it only knows about itself in this case, being its own instance. You can probably have a method that prints a specific card's credit limit, but if we really wanted to see which of your current cards had the highest limit, it would make more sense to not look at 1 specific card and look at things in a collective way. 
+    </p>
+    <img class="center-image code-snippet" src="imgs/class_methods2.png" alt="credit card example"/>
+    <p>
+      Having a class method instead, like "highest_limit" to find the card with the highest credit would be best suited for our example where running "Credit_cards.new()" creates a single credit card. It is worth noting however, that a class method may not be necessary if we were to have instead passed in an array of cards in say, a Card_Comparer class that had an instance method to run operations for us.
+    </p>
+    <p>
+      And like instance methods, class methods can take in a number of arguments as you can see from the example above. So again, when it comes down to whether or not to use them, it may really just come down to a matter of "Should a single instance be able to do this or nah?"
+    </p>
+
+
+    </section>
+     
+  </div>
+  <div class="footer">
+      <p id="copyright">&copy; 2015 Harvey Ngo
+      </div>
+</body>
+</html>
