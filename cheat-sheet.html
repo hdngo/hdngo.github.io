@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title></title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="/stylesheets/cheat-sheet-stylesheet.css">
+</head>
+
+<body>
+ <h3>So you wanna create a website?</h3>
+  <div class="text-box">
+    <p>Well for starters, let's create a .html file by using the following declaration, which should always be at the beginning of your HTML document: <!DOCTYPE HTML> </p>
+  </div>
+
+    <p>
+    <!DOCTYPE HTML>
+    </p>
+
+ <h3>HTML Tags</h3>
+  <div class="text-box">
+    <p>Next, throw in your HTML opening and closing tags. Quick note, tags are denoted by alligator bracket's, where closing tags consist of a forward slash inside of them.  All of your other HTML element tags will be going inside of your HTML tags.</p>
+  </div>
+
+<h3>HTML Tags</h3>
+  <div class="text-box">
+    <p>Next, throw in your HTML opening and closing tags. Quick note, tags are denoted by alligator bracket's, where closing tags consist of a forward slash inside of them.  All of your other HTML element tags will be going inside of your HTML tags.</p>
+  </div>
+
+<h3>Head Tags</h3>
+<div class="text-box">
+	<p>After creating your HTML tags, you'll want a head tag. Inside of it is where you'll define the title of your page, a.k.a. the text that shows up on your browser tabs. It's also where you can create other tags that link to CSS stylesheets, JavaScript files, and so on.
+	</p>
+</div>
+
+<h3>Body Tags</h3>
+<div class="text-box">
+	<p>Next you have your body tags. Sounds weird, but bear with it. It's basically where you define the body of your web page. In other words, it's where you throw in all the stuff that'll be in the body of your web page, your elements.
+	</p>
+</div>
+
+<h3>HTML Elements</h3>
+<div class="text-box">
+	<p>Let us just start off by saying that there are a lot of HTML elements to choose from, the most basic being paragraph tags, images, links, lists, and tables. HTML5 comes with new semantic elements that give some insight as to what kind of content is contained within a tag, but more on that later. In terms of "sectioning off" your content, you can do so by nesting elements within what HTML refers to as divs (dividers if that helps with memorization) or alternatively, section tags if you're a bit familiar with HTML5.
+	</p>
+</div>
+
+  <h3>Style Properties</h3>
+  <div class="text-box">
+    The purpose of HTML is to tell a browser what content it should display on a screen and CSS is the language that tells it what to look like. For example, to make this element look the way it does, the following lines of code are running in the background in CSS...
+  </div>
+
+    <code>.text-box {
+  border: 1px solid blue;
+  width: 75vw;
+  margin: auto;
+  border-radius: 3px;
+  clear: both;
+  font-family: 'Raleway';
+}
+    </code>
+
+  <div class="text-box">
+    There are a few categories of styles that broadly make up what CSS can do: text transformation (positioning, size, font, etc), box positioning (described in the next sextion), animations, and transitions.
+  </div>
+
+  <h3>CSS Positioning</h3>
+  <div class="text-box">
+    To give websites their rich formatting, several families of CSS are used to put every element in its place. At the "top" level, every element is a box which in turn has a margin (or area on the outside), border, and padding (an area on the inside). These can be called in CSS with the name and then a side (margin-left: 2px;) or without a suffix to be evenly applied to all sides (padding: 5px;). Then, to determine where the box itself will live on each of the pages, there are the positioning properties of relative, absolute, and fixed. Below is the CSS used on the copyright to place the text at the bottom. Of particular note: position is <em>absolutely 0px</em> from the <em>bottom</em>.
+  </div>
+
+    <code>
+      footer  {
+  color: green;
+  position: absolute;
+  bottom: 0px;
+}
+    </code>
+
+
+  <h3>Class/ID Selectors</h3>
+  <div class="text-box">
+    To let the browser know what style to apply to what boxes, html classes and IDs are used as selectors. The blue border boxes are called "text-box" in HTML and called with ".text-box" on the stylesheet so that the browser will render these rules on that content. It is important to note that if an element is assigned a class, it will be called in CSS with a . in front of the name. If it is assigned with an is, it will be called with a #, and if it is assigned to all elements of a type, such as the header 3 shown below, it is called by name without punctuation at all.
+  </div>
+      <code> h3 {
+  border: 1px solid red;
+  width: 20vw;
+  border-radius: 3px;
+}
+    </code>
+
+</body>
+
+<footer>
+  &copy Harvey and Daniel 2015, PLAYAA. <br>
+  Daniel really likes the word playa.
+</footer>
+
+
+</html>
