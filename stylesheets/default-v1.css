@@ -1,0 +1,170 @@
+*{
+	font-family: "Roboto", Helvetica;
+}
+body{
+	background-image: url(../imgs/zero_metal.png);
+	background-repeat: repeat;
+	width:100%;
+	margin:0 auto;
+}
+
+a{
+	text-decoration: none;
+}
+.content{
+	width:100%;
+	height:80%;
+}
+#left-panel{
+	height:85%;
+	position:absolute;
+	width:20%;
+	vertical-align: center;
+	left:0;
+	margin-left:2.5%;
+	margin-right:2.5%;
+	margin-top:2.5%;
+	margin-bottom:2.5%;
+	display:inline-block;
+	/*border:1px solid white;*/
+}
+
+#main{
+	width: 35%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  left: 25%;
+  height: 85%;
+  display: inline-block;
+  position: absolute;
+  /*border: 1px solid white;*/
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#right-panel{
+	width:20%;
+	left:75%;
+	margin-left:2.5%;
+	margin-right:2.5%;
+	margin-top:2.5%;
+	margin-bottom:2.5%;
+	height:85%;
+	/*border:1px solid white;*/
+	display:inline-block;
+	position:absolute;
+}
+
+.center-frame{
+	display: block;
+  border: 10px;
+  border-image: url(../imgs/icy-sneaker-mesh.png) 30 30 repeat;
+  height: 64px;
+  margin-top: 50%;
+}
+
+.center-frame:hover{
+	background-image: url(../imgs/gfp.jpg);
+	background-size: cover;
+  	background-origin: content-box;
+  	background-position-y: -78px;
+  	opacity:.95;
+}
+
+#whereami{
+	font-size: 42px;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 64px;
+  margin: auto;
+}
+
+h1{
+	font-weight: 500;
+	color:white;
+	letter-spacing: .05em;
+	text-align:center;
+	font-size:42px;
+}
+
+p{
+	color:white;
+	letter-spacing:.05em;
+}
+
+.left-icons, .right-icons{
+	vertical-align: middle;
+	display:inline;
+}
+
+.icon{
+	display:block;
+	margin-top:33%;
+	list-style: none;
+	padding:0;
+	height:52px;
+	text-align:center;
+}
+
+.icon a img{
+	height:100%;
+	padding:0;
+	margin:0;
+}
+
+.icon a img:hover{
+	border:2px dashed rgb(161,228,219);
+	border-radius:50%;
+	padding:0;
+	margin:0;
+}
+
+
+.links{
+	padding-left:0;
+	padding-right:0;
+	text-align:center;
+}
+
+.links li{
+	display:inline-block;
+	margin-left:5px;
+	margin-right:5px;
+	list-style: none;
+}
+
+.links li a{
+	text-decoration: none;
+	color:white;
+	position:relative;
+	top:-2px;
+}
+
+.links li a:hover{
+	color: rgb(161,228,219);
+}
+
+.links li img{
+	height:.75em;
+}
+
+
+.footer{
+	display:block;
+	height:5%;
+	width:95%;
+	position:absolute;
+	bottom:0;
+	margin-bottom:.5%;
+	margin-top:.5%;
+	margin-left:2.5%;
+	margin-right:2.5%;
+}
+
+#copyright{
+	text-align:center;
+	color: white;
+}
