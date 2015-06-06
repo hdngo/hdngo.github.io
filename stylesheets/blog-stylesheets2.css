@@ -1,9 +1,14 @@
+#blog-posts{
+	height:67%;
+	overflow-y:auto;
+}
+
 #blogs{
 	margin-top:.25rem;
 	margin-left:20%;
 	width:60%;
 	border-top: .15rem solid rgb(28,68,29);
-	border-bottom: .15rem solid rgb(28,68,29);
+	/*border-bottom: .15rem solid rgb(28,68,29);*/
 }
 
 #blogs li{
