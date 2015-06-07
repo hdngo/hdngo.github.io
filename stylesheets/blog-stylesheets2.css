@@ -92,4 +92,9 @@ a p:hover{
   margin-right: auto;
 }
 
+.footer{
+	position: static;
+}
+
+
 /*rgb(28,68,29)*/

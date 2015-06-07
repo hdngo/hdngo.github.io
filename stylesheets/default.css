@@ -119,3 +119,7 @@ a:hover{
 	padding-bottom: 3.5%;
 	font-size: .8rem;
 }
+
+.about-panel{
+	overflow-y:auto;
+}
